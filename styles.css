@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;;
+}
+body{
+    height: 100%;
+    width: 100vw;
+    background-color: #f3ebeb;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+/*Styles for header*/
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #000;
+}
+/*Styles for logo image*/
+#header-img{
+    height: 60px;
+}
+.logo-container{
+    display: flex;
+    place-items: center;
+}
+/*Styles for nav bar*/
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.menu li{
+    margin: 10px 0;
+    text-align: center;
+}
+#nav-bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nav-link{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin: 10px;
+}
+.nav-link:hover{
+    font-weight: 800;
+    color: #696666bb;
+}
+.menu-icon{
+    width: 40px;
+}
+#menu{
+    display: none;
+}
+.label-menu{
+    display: none;
+    cursor: pointer;
+}
+
+/*Styles for container and sections*/
+.container{ 
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.void{
+    height: 101px;
+    width: 100%;
+}
+section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 20px;
+}
+/* Section 1*/
+#section-1 h1{
+    font-weight: 600;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+#section-1 h1 span{
+    font-weight: 800;
+    color: #2110c0;
+}
+#section-1 p{
+    font-size: 25px;
+    text-align: center;
+    color: #292929;
+    font-weight: bold;
+}
+
+/*form*/
+#form{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+#email{
+    width: 40%;
+    max-width: 315px;
+    margin: 0 auto;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid #2110c0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    color: #2110c0;
+    font-size: 15px;
+    font-weight: bold;
+}
+#email::placeholder{
+    color: #292929;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+#submit{
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #3221cc;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: #2110c0;
+    cursor: pointer;
+}
+/*section 2*/
+
+#section-2 h1{
+    font-size: 50px;
+    text-align: center;
+    color: #3221cc;
+}
+/*iframe*/
+.container-iframe{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#video{
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+}
+/*section 3*/
+#section-3{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+#container-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+}
+.item{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    border: 3px solid #3221cc;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.item p{
+    font-size: 20px;
+    color: #292929;
+}
+.button-item{
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: #3221cc;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-item:hover{
+    background-color: #2110c0;
+    
+}
+
+@media (max-width:991px) {
+    .label-menu{
+        display: initial;
+    }
+    
+    .menu{
+        width: 40%;
+        margin: 0;
+        position:absolute;
+        top:100%;
+        right: 0;
+        background-color: black;
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+        display: none;
+    }
+    #menu:checked ~ .menu{
+        display: initial;
+    }
+    .item{
+        width: 200px;
+        height: 300px;
+    }
+}
+
