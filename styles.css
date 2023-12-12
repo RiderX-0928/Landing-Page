@@ -1,3 +1,9 @@
+:root{
+    --color-1: #2110c0;
+    --color-2: #3221cc;
+    --color-3:#292929;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -105,12 +111,12 @@ section{
 }
 #section-1 h1 span{
     font-weight: 800;
-    color: #2110c0;
+    color: var(--color-1);
 }
 #section-1 p{
     font-size: 25px;
     text-align: center;
-    color: #292929;
+    color: var(--color-3);
     font-weight: bold;
 }
 
@@ -129,15 +135,15 @@ section{
     margin: 0 auto;
     height: 2.5rem;
     border-radius: 10px;
-    border: 1px solid #2110c0;
+    border: 1px solid var(--color-1);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 5px;
-    color: #2110c0;
+    color: var(--color-1);
     font-size: 15px;
     font-weight: bold;
 }
 #email::placeholder{
-    color: #292929;
+    color: var(--color-3);
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -146,13 +152,13 @@ section{
     height: 2.5rem;
     border-radius: 10px;
     border: none;
-    background-color: #3221cc;
+    background-color: var(--color-2);
     color: #fff;
     font-size: 15px;
     font-weight: bold;
 }
 #submit:hover{
-    background-color: #2110c0;
+    background-color: var(--color-1);
     cursor: pointer;
 }
 /*section 2*/
@@ -160,7 +166,7 @@ section{
 #section-2 h1{
     font-size: 50px;
     text-align: center;
-    color: #3221cc;
+    color: var(--color-2);
 }
 /*iframe*/
 .container-iframe{
@@ -194,7 +200,7 @@ section{
     width: 250px;
     height: 350px;
     border-radius: 10px;
-    border: 3px solid #3221cc;
+    border: 3px solid var(--color-2);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -204,7 +210,7 @@ section{
 }
 .item p{
     font-size: 20px;
-    color: #292929;
+    color: var(--color-3);
 }
 .button-item{
     width: 6rem;
@@ -213,13 +219,13 @@ section{
     border: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     color: #fff;
-    background-color: #3221cc;
+    background-color: var(--color-2);
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
 }
 .button-item:hover{
-    background-color: #2110c0;
+    background-color: var(--color-1);
     
 }
 
