@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <header id="header">
+            <div class="logo-container"><img src="https://cdn-icons-png.flaticon.com/512/9168/9168209.png" alt="logo" id="header-img"></div>
+            <nav id="nav-bar">
+                <input type="checkbox" name="menu" id="menu">
+                <label for="menu" class="label-menu">
+                    <img src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png" class="menu-icon"/>
+                </label>
+                <ul class="menu">
+                    <li><a href="#void" class="nav-link">Home</a></li>
+                    <li><a href="#section-2" class="nav-link">Information</a></li>
+                    <li><a href="#section-3" class="nav-link">Products</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+    <div class="container">
+        <div id="void" class="void"></div>
+            <section id="section-1"  name="home">
+                <h1>Welcome to the <span>Best </span>bootcamp!</h1>
+                <p>Sign up and be one of the best</p>
+                <form action="https://www.freecodecamp.com/email-submit" id="form" target="_blank">
+                    <label for="email"></label><input type="email" name="email" id="email" placeholder="Type your email">
+                    <input type="submit" value="Submit" id="submit" name="submit">
+                </form>
+            </section>
+            <section id="section-2"  name="information">
+                <h1>Chek this video</h1>
+                <div class="container-iframe">
+                    <iframe id="video"  src="https://www.youtube.com/embed/uyhzCBEGaBY?si=WjxltdCsqTHmq367" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+            </section>
+            <section id="section-3"  name="products">
+                <h1>Select your plan favorite</h1>
+                <div id="container-items">
+                    <div class="item">
+                        <h2>Full Stack</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="button-item">Buy Now</button>
+                    </div>
+                    <div class="item">
+                        <h2>Back-End</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="button-item">Buy Now</button>
+                    </div>
+                    <div class="item">
+                        <h2>Security</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="button-item">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+    </div>
+</body>
+</html>
